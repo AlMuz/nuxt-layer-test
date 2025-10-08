@@ -1,0 +1,20 @@
+@import 'tailwindcss' theme(static);
+@import '@nuxt/ui';
+
+@theme static {
+  --color-brand-50: #0F172B;
+  --color-brand-100: #0F172B;
+  --color-brand-200: #0F172B;
+  --color-brand-300: #0F172B;
+  --color-brand-400: #0F172B;
+  --color-brand-500: #0F172B;
+  --color-brand-600: #0F172B;
+  --color-brand-700: #0F172B;
+  --color-brand-800: #0F172B;
+  --color-brand-900: #0F172B;
+  --color-brand-950: #0F172B;
+}
+
+html {
+  scroll-behavior: smooth;
+}
