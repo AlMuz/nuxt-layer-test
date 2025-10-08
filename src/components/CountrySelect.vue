@@ -1,9 +1,7 @@
 <template>
   <u-form-field :label="label" :name="name" class="mb-2">
     <u-input-menu v-model="value" :items="options" :placeholder="placeholder" :disabled="disabled" :multiple="multiple"
-      :ui="{
-        tagsItem: 'px-1.5 py-1.5',
-      }" label-key="text">
+      label-key="text">
       <template #leading="{ modelValue }">
         <u-icon v-if="Array.isArray(modelValue) && modelValue?.length || !modelValue?.text?.length"
           name="i-material-symbols-search" class="text-gray-400 size-6" />
@@ -14,7 +12,7 @@
       </template>
 
       <template #tags-item-text="{ item }">
-        <div class="flex justify-center items-center gap-1">
+        <div class="flex justify-center items-center gap-[6px]">
           <div>{{ getFlagEmoji(item.value) }}</div>
           <div>{{ item.text }}</div>
         </div>
